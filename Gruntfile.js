@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         jshint: {
-            all: ['**/*.js', '!node_modules/**', '!app/vendor/**', '!spec/helpers/**'],
+            all: ['**/*.js', '!node_modules/**', '!app/vendor/**', '!spec/helpers/**', '!app/main-built.js'],
         },
 
         csslint: {
@@ -67,6 +67,29 @@ module.exports = function (grunt) {
                 tasks: ['jshint', 'jsvalidate', 'jasmine'],
             }
         },
+
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: 'app',
+                    name: 'main',
+                    mainConfigFile: 'app/main.js',
+                    out: 'app/main-built.js',
+                    preserveLicenseComments: false,
+
+                    /*optimizeCss: "standard.keepLines",
+                    cssIn: 'app/css/main.css',*/
+                    /*cssOut: 'app/css/main-built.css',*/
+                }
+            },
+            css: {
+                options: {
+                    optimizeCss: 'standard',
+                    cssIn: 'app/css/main.css',
+                    out: 'app/css/main-built.css'
+                }
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -76,6 +99,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
 
     // Default task.
     grunt.registerTask('default', ['connect', 'watch']);
