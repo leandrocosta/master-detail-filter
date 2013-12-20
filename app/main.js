@@ -29,7 +29,6 @@ require(['domReady', 'jquery', 'underscore', 'home/view', 'faux-server'], functi
             domReady, $, _, HomeView) {
 
     domReady(function () {
-        //$('body').append(new ContactUsView().render().$el);
         new HomeView({el: $('body')}).render();
     });
 });
