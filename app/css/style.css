@@ -1,0 +1,55 @@
+.subnav .btn-link {
+    text-decoration:none;
+}
+.list-item {
+    position:relative;
+    border-bottom:1px solid #d6d6d6;
+    padding:.6em .6em .6em 2em;
+}
+.list-item.waypoint {
+    border-bottom:0;
+    padding-top:1.4em;
+}
+.list-item.selected {
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#eee),color-stop(1,#ccc));
+}
+.list-item .index {
+    position:absolute;
+    right:0.7em;
+}
+.list-item a {
+    display:block;
+    text-decoration:none;
+    color:#444;
+}
+.list-item img {
+    float:left;
+    width:90px;
+}
+.list-item p { 
+    margin:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding-right:60px;
+}
+.list-item strong {
+    color:#444;
+}
+.list-item .list-item-text {
+    margin-left:90px;
+    padding-left:.7em;
+}
+.content-detail-inner {
+    padding:2em 1em;
+}
+.content-detail-inner .glyphicon {
+    font-size:24px;
+}
+.content-detail .content-detail-inner td {
+    padding-left:0;
+    max-width: 16em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

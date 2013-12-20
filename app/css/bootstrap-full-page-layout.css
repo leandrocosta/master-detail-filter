@@ -1,0 +1,55 @@
+/*
+ * HTML&CSS + Twitter Bootstrap: full page layout or height 100%
+ *
+ * +-------------------------------------------------+
+ * |        Header + search (Twitter navbar)         |
+ * +------------+------------------------------------+
+ * |            |                                    |
+ * |            |                                    |
+ * | Navigation |          Content column            |
+ * |            |                                    |
+ * |            |                                    |
+ * +------------+------------------------------------+
+ * |                     Footer                      |
+ * +-------------------------------------------------+
+ *
+ * http://stackoverflow.com/questions/14179166/htmlcss-twitter-bootstrap-full-page-layout-or-height-100-npx
+ * http://stackoverflow.com/questions/5768029/another-html-css-layout-challenge/5768262#5768262
+ * http://jsfiddle.net/bKsad/25/
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.content-wrapper, .content-wrapper>.row, .content-master, .content-detail {
+    height: 100%;
+}
+
+.content-wrapper>.row {
+    margin-right:0;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 78px 0 41px;
+    /*padding: 78px 15px 41px;*/
+    /*padding: 78px 15px 0;*/ /* no footer */
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.content-master {
+    overflow-y:scroll;
+    /*margin:0 -15px;*/
+}
+
+.content-detail {
+    overflow:auto;
+}
+.footer {
+    height: 40px;
+    border-top: 1px solid #d6d6d6;
+}

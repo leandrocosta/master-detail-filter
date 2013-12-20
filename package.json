@@ -1,0 +1,24 @@
+{
+  "name": "master-detail-filter",
+  "version": "0.0.1",
+  "author": "Leandro Costa <leandro.costa@gmail.com>",
+  "description": "A Master/Detail & Filter layout using Backbone.js, Bootstrap, RequireJS and Grunt",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leandrocosta/master-detail-filter"
+  },
+  "scripts": {
+    "test": "grunt travis"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-jasmine": "~0.5.2",
+    "grunt-template-jasmine-requirejs": "~0.1.8",
+    "grunt-jsvalidate": "~0.2.2",
+    "grunt-contrib-csslint": "~0.2.0"
+  }
+}
