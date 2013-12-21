@@ -76,6 +76,7 @@ module.exports = function (grunt) {
                     mainConfigFile: 'app/main.js',
                     out: 'app/main-built.js',
                     preserveLicenseComments: false,
+                    /*optimize: 'none',*/
 
                     /*optimizeCss: "standard.keepLines",
                     cssIn: 'app/css/main.css',*/
