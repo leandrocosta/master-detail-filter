@@ -5,3 +5,6 @@ master-detail-filter
 ====================
 
 A Master/Detail & Filter layout using Backbone.js, Bootstrap, RequireJS and Grunt
+
+
+`demo <http://leandrocosta.github.io/master-detail-filter/>`_
