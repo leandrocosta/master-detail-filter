@@ -33,7 +33,7 @@ define(['jquery', 'underscore', 'backbone', 'filter/multiselectItemView',
                 new FilterOptionMultiselectItemView({
                     el: self.$el,
                     value: model.id,
-                    name: model.get('name'),
+                    name: model.get(self.label_attr_name),
                     is_checked: _.contains(selected_options_ids, model.id.toString())
                 }).render();
             });
